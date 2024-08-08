@@ -36,6 +36,7 @@
   "license": "MIT",
   "dependencies": {
     "@near-wallet-selector/core": "^8.9.1",
+    "@near-wallet-selector/mintbase-wallet": "^8.9.11",
     "@near-wallet-selector/modal-ui": "^8.9.1",
     "@near-wallet-selector/my-near-wallet": "^8.9.1",
     "near-api-js": "^2.1.4",
