@@ -17,11 +17,6 @@ class naxios {
     this.contractId = config.contractId
     this.network = config.network
 
-    // Ensure it is going to run on client side only
-    if (!isClient()) {
-      return
-    }
-
     if (config.walletSelectorModules) {
       this.walletSelectorModules = config.walletSelectorModules
     }
@@ -32,6 +27,11 @@ class naxios {
       walletSelectorModules: this.walletSelectorModules,
       onInit: config.onInit,
     })
+
+    // Ensure it is going to run on client side only
+    if (!isClient()) {
+      return
+    }
   }
 
   /**
