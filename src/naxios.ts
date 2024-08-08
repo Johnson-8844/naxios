@@ -1,5 +1,5 @@
 import { WalletModuleFactory } from '@near-wallet-selector/core'
-import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet'
+// import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet'
 import { setupMintbaseWallet } from "@near-wallet-selector/mintbase-wallet"
 import ContractManager from './managers/contract-manager'
 import WalletManager from './managers/wallet-manager'
