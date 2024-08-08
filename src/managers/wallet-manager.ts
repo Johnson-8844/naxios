@@ -76,24 +76,24 @@ export class WalletManager {
     this.status = status
   }
 
-  private async setupData() {
-    // Initialize Wallet
-    if (this.walletSelector) {
-      const wallet = await this.walletSelector.wallet()
-      this.wallet = wallet
+  // private async setupData() {
+  //   // Initialize Wallet
+  //   if (this.walletSelector) {
+  //     const wallet = await this.walletSelector.wallet()
+  //     this.wallet = wallet
 
-      const walletState = this.walletSelector.store.getState()
-      const accounts = walletState.accounts
-      this.accounts = accounts
+  //     const walletState = this.walletSelector.store.getState()
+  //     const accounts = walletState.accounts
+  //     this.accounts = accounts
 
-      // Set main account Id
-      this.accountId = accounts[0].accountId
+  //     // Set main account Id
+  //     this.accountId = accounts[0].accountId
 
-      // Others
-      this.recentlySignedInWallets = walletState.recentlySignedInWallets
-      this.selectedWalletId = walletState.selectedWalletId
-    }
-  }
+  //     // Others
+  //     this.recentlySignedInWallets = walletState.recentlySignedInWallets
+  //     this.selectedWalletId = walletState.selectedWalletId
+  //   }
+  // }
 
   /**
    * Init Near. To be called when the website loads.
