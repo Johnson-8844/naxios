@@ -110,12 +110,12 @@ export class WalletManager {
     this.walletSelector = walletSelector
 
     // Initialize Wallet
-    if (walletSelector.isSignedIn()) {
-      await this.setupData()
-    } else {
-      // Setup data on user sign in
-      walletSelector.on('signedIn', this.setupData)
-    }
+    // if (walletSelector.isSignedIn()) {
+    //   await this.setupData()
+    // } else {
+    //   // Setup data on user sign in
+    //   walletSelector.on('signedIn', this.setupData)
+    // }
 
     this.changeWalletStatus('ready')
   }
