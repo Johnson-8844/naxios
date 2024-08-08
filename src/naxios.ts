@@ -1,5 +1,5 @@
 import { WalletModuleFactory } from '@near-wallet-selector/core'
-import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet'
+import { setupMintbaseWallet } from '@near-wallet-selector/mintbase-wallet'
 import ContractManager from './managers/contract-manager'
 import WalletManager from './managers/wallet-manager'
 import { NaxiosConstructor, Network, ContractApi } from './managers/types'
@@ -9,7 +9,7 @@ class naxios {
   private rpcNodeUrl?: ContractManager['rpcNodeUrl']
   private contractId: string
   private network: Network
-  private walletSelectorModules: WalletModuleFactory[] = [setupMyNearWallet()]
+  private walletSelectorModules: WalletModuleFactory[] = [setupMintbaseWallet()]
   private walletManager!: WalletManager
 
   constructor(config: NaxiosConstructor) {
