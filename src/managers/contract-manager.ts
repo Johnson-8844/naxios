@@ -55,9 +55,9 @@ class ContractManager {
   // Build View Method Interface
   private async buildViewInterface<R>(props: BuildViewInterfaceProps) {
     // Clean up cache: remove all expired items from cache (in memory or local storage)
-    if (this.cache) {
-      await this.cache.cleanUp()
-    }
+    // if (this.cache) {
+    //   await this.cache.cleanUp()
+    // }
 
     const { method = '', args = {}, config } = props
     const cacheKey = this.getCacheKey(method, args)
